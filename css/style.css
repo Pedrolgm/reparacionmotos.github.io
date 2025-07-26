@@ -1,0 +1,311 @@
+/*<!-- AUTOR: PEDRO LUIS GARCIA MARTINEZ -->*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+/* Fuente principal y comportamiento de desplazamiento suave */
+/* Fuente predeterminada para todo el sitio (ejemplo: Open Sans) */
+  body {
+    font-family: 'Montserrat', sans-serif;
+  }
+
+    /* Fondo de cargador cubriendo toda la pantalla */
+.loader-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255,255,255,0.9);
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.6s ease;
+}
+
+/* Contenedor del ícono + texto */
+.loader-content {
+  display: flex;
+  align-items: center;
+}
+
+/* Estilo del fondo del loader */
+.loader-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Ocultar con transición */
+#loader.hidden {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+
+/* Contenedor interno */
+.loader-content {
+  display: flex;
+  align-items: center;
+}
+
+/* Moto con animación de caminata */
+.icono-moto-caminando {
+  font-size: 2.5rem;
+  color: #007bff;
+  animation: avanzarMoto 1.2s linear infinite;
+}
+
+/* Animación que mueve la moto hacia la derecha y regresa */
+@keyframes avanzarMoto {
+  0%   { transform: translateX(0); }
+  25%  { transform: translateX(5px) rotate(-5deg); }
+  50%  { transform: translateX(10px) rotate(5deg); }
+  75%  { transform: translateX(5px) rotate(-5deg); }
+  100% { transform: translateX(0); }
+}
+
+
+    /* Estilos para las imágenes del carrusel */
+    .carousel-item img {
+      object-fit: cover; /* Asegura que la imagen cubra el contenedor */
+      height: 500px;     /* Altura fija del carrusel */
+      width: 100%;       /* Imagen ocupa todo el ancho */
+      filter: brightness(0.7); /* Oscurece ligeramente la imagen para que el texto encima se vea mejor */
+    }
+
+    /* Caja de texto en el carrusel */
+    .carousel-caption {
+      background: rgba(0, 0, 0, 0.5); /* Fondo negro semitransparente */
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    /* Título del carrusel */
+    .titulo-principal {
+      font-size: 2.5rem;
+      font-weight: 800;
+      color: #ffffff;
+    }
+
+    /* Subtítulo del carrusel */
+    .subtitulo {
+      font-size: 1.2rem;
+      font-weight: 400;
+      color: #f0f0f0;
+    }
+
+   /* Inicialmente ocultas */
+  .animate-cascade {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+
+  /* Clases activadas al entrar en pantalla */
+  .show {
+    animation: cascadeIn 0.8s ease-out forwards;
+  }
+
+  .delay-1.show { animation-delay: 0.3s; }
+  .delay-2.show { animation-delay: 0.6s; }
+  .delay-3.show { animation-delay: 0.9s; }
+
+  @keyframes cascadeIn {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Icono animado al pasar el mouse */
+  .animated-icon {
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .animated-icon:hover {
+    transform: scale(1.2) rotate(5deg);
+  }
+
+    /* Estilo adicional para justificar el texto */
+    .text-justify {
+      text-align: justify;
+    }
+
+    /* Botón con transición suave */
+    .btn-animado {
+      transition: all 0.3s ease-in-out;
+      font-weight: bold;
+    }
+
+    /* Efecto hover: resalta al pasar el mouse */
+    .btn-animado:hover {
+      background-color: #28a745; /* verde brillante */
+      color: #fff;
+      transform: scale(1.1); /* agranda ligeramente */
+      box-shadow: 0 0 20px rgba(40, 167, 69, 0.6); /* sombra verde */
+    }
+
+    /* Tarjeta animada */
+    .plan-card {
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+      border-radius: 15px;
+    }
+
+    .plan-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    /* Icono temblando al pasar mouse */
+    .shake-icon {
+      display: inline-block;
+      transition: 0.2s ease-in-out;
+    }
+
+    .plan-card:hover .shake-icon {
+      animation: shake 0.5s infinite;
+    }
+
+    @keyframes shake {
+      0% { transform: rotate(0deg); }
+      25% { transform: rotate(3deg); }
+      50% { transform: rotate(-3deg); }
+      75% { transform: rotate(3deg); }
+      100% { transform: rotate(0deg); }
+    }
+
+    /* Botón animado */
+    .btn-plan {
+      transition: all 0.3s ease-in-out;
+      font-weight: bold;
+    }
+
+    .btn-plan:hover {
+      transform: scale(1.08);
+      background-color: #198754;
+      color: white;
+      box-shadow: 0 0 15px rgba(25, 135, 84, 0.5);
+    }
+
+    /* Animación al pasar por la sección */
+#info-moto {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-in-out;
+}
+
+#info-moto.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Iconos con animación al pasar el mouse */
+.icono-beneficio {
+  transition: transform 0.3s ease;
+}
+.icono-beneficio:hover {
+  transform: scale(1.3) rotate(10deg);
+}
+
+/* Bordes verticales a los lados de la imagen */
+.columna-imagen-borde {
+  border-left: 2px solid #ccc;
+  border-right: 2px solid #ccc;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-color: #007bff;
+  transition: border-color 0.4s ease-in-out;
+}
+
+/* Bordes horizontales */
+.seccion-borde {
+  border-top: 3px solid #007bff;
+  border-bottom: 3px solid #007bff;
+}
+
+/* Ícono animado girando */
+.icono-girando {
+  animation: girar 2s linear infinite;
+}
+
+/* Animación de giro */
+@keyframes girar {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Ajuste para animación solo al pasar por la sección si usas AOS o JS extra */
+.animate-icono {
+  transition: transform 0.5s ease-in-out;
+}
+
+/* Ícono colgante con movimiento */
+.icono-colgante {
+  position: absolute;
+  top: -12px;
+  right: -50px;
+  animation: colgar 2s ease-in-out infinite;
+  color: #007bff;
+}
+
+@keyframes colgar {
+  0%, 100% { transform: rotate(10deg) translateY(0); }
+  50% { transform: rotate(-10deg) translateY(5px); }
+}
+
+/* Tarjetas animadas al pasar el mouse */
+.tarjeta-curso {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tarjeta-curso:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+    /* Pie de página */
+    footer {
+      background-color: #212529; /* Gris oscuro */
+      color: white;
+      padding: 20px;
+    }
+
+    /* Estilos para los botones flotantes */
+    .whatsapp-float,
+    .scroll-top {
+      position: fixed;        /* Posición fija en pantalla */
+      width: 55px;            /* Ancho del círculo */
+      height: 55px;           /* Altura del círculo */
+      line-height: 55px;      /* Centrado vertical del ícono */
+      border-radius: 50%;     /* Forma circular */
+      text-align: center;     /* Centra el ícono horizontalmente */
+      font-size: 24px;        /* Tamaño del ícono */
+      z-index: 999;           /* Aparece por encima del contenido */
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3); /* Sombra para profundidad */
+      bottom: 20px;           /* Separación inferior */
+    }
+
+    /* Botón de WhatsApp */
+    .whatsapp-float {
+      right: 90px;            /* Separado a la derecha */
+      background-color: #25d366; /* Verde de WhatsApp */
+      color: white;
+    }
+
+    /* Botón de regreso arriba */
+    .scroll-top {
+      right: 20px;            /* Más pegado a la derecha que WhatsApp */
+      background-color: #0d6efd; /* Azul Bootstrap */
+      color: white;
+      cursor: pointer;        /* Cursor en forma de mano */
+    }

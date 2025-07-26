@@ -1,0 +1,411 @@
+<!-- AUTOR: PEDRO LUIS GARCIA MARTINEZ -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Escuela de Oficios | Curso de Motos</title>
+
+  <!-- Enlaces CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+
+
+  <!-- Iconos Awesome|Bootstrap -->
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+ 
+</head>
+<body>
+
+  <!-- Navegación -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Escuela ReparandoMotos</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#miCarrusel">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="#quienes-somos">¿Quiénes somos?</a></li>
+          <li class="nav-item"><a class="nav-link" href="#cursos">Cursos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+          <li class="nav-item"><a class="nav-link" href="#ubicacion">Ubicación</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Carrusel -->
+  <div id="miCarrusel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="4000" data-bs-pause="hover">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="Images/taller-motos01.jpg" class="d-block w-100">
+        <div class="carousel-caption">
+          <h1 class="titulo-principal">Curso Profesional de Reparación de Motos</h1>
+          <p class="subtitulo">Aprende desde cero y certifícate en 8 semanas.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="Images/taller-motos02.jpg" class="d-block w-100">
+        <div class="carousel-caption">
+          <h1 class="titulo-principal">Inscripción: $800 MXN</h1>
+          <p class="subtitulo">Incluye materiales, uniforme y taller.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="Images/taller-motos03.jpg" class="d-block w-100">
+        <div class="carousel-caption">
+          <h1 class="titulo-principal">Clases Presenciales</h1>
+          <p class="subtitulo">Lunes a Viernes | 5 PM - 8 PM</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#miCarrusel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#miCarrusel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+
+  <!-- Quiénes Somos -->
+<section id="quienes-somos" class="py-5 seccion-borde bg-white">
+  <div class="container text-center">
+    <div class="d-flex justify-content-center align-items-center mb-4 gap-2 animate-icono">
+      <!-- Ícono animado (puedes cambiarlo por otro de FontAwesome) -->
+      <i class="fas fa-tools fa-2x text-primary icono-girando"></i>
+      <h2 class="fw-bold m-0 text-primary">¿Quiénes somos?</h2>
+    </div>
+    <p class="lead" >
+      Somos una escuela de oficios comprometida con la formación técnica de calidad, enfocada en áreas como mecánica, electricidad y más. Nuestra misión es impulsar el crecimiento profesional de nuestros estudiantes.
+    </p>
+  </div>
+</section>
+
+
+ <!-- Misión, Visión y Valores con animación al entrar en pantalla -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <div class="row text-center">
+      <h2 class="fw-bold mb-5 text-primary">Misión, Visión y Valores</h2>
+
+      <!-- Tarjeta Misión -->
+      <div class="col-md-4 mb-4">
+        <div class="card shadow p-4 animate-cascade delay-1">
+          <div class="mb-3">
+            <i class="fas fa-bullseye fa-3x text-primary animated-icon"></i>
+          </div>
+          <h4 class="fw-bold">Misión</h4>
+          <p class="text-justify">
+            Formar técnicos altamente capacitados mediante educación práctica, accesible y de calidad. Impulsamos el aprendizaje por experiencia, desarrollando habilidades útiles para el entorno laboral real.
+          </p>
+        </div>
+      </div>
+
+      <!-- Tarjeta Visión -->
+      <div class="col-md-4 mb-4">
+        <div class="card shadow p-4 animate-cascade delay-2">
+          <div class="mb-3">
+            <i class="fas fa-eye fa-3x text-success animated-icon"></i>
+          </div>
+          <h4 class="fw-bold">Visión</h4>
+          <p class="text-justify">
+            Ser la escuela de oficios líder en la región, reconocida por su excelencia académica, compromiso social y por formar profesionales capaces de transformar su comunidad a través del conocimiento técnico.
+          </p>
+        </div>
+      </div>
+
+      <!-- Tarjeta Valores -->
+      <div class="col-md-4 mb-4">
+        <div class="card shadow p-4 animate-cascade delay-3">
+          <div class="mb-3">
+            <i class="fas fa-handshake fa-3x text-warning animated-icon"></i>
+          </div>
+          <h4 class="fw-bold">Valores</h4>
+          <p class="text-justify">
+            Compromiso, honestidad, disciplina, innovación y respeto al alumno. Fomentamos un ambiente de crecimiento personal, profesional y humano con base en valores sólidos y éticos.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Nuestros Cursos Técnicos -->
+<section id="cursos" class="py-5 bg-light">
+  <div class="container text-center">
+    <!-- Título con icono colgante -->
+    <h2 class="fw-bold mb-4 position-relative d-inline-block text-primary">
+      Nuestros Cursos Técnicos
+      <i class="fas fa-graduation-cap icono-colgante"></i>
+    </h2>
+
+    <!-- Tarjetas -->
+    <div class="row mt-4">
+      <!-- Curso 1 -->
+      <div class="col-md-4 mb-4">
+        <div class="card tarjeta-curso h-100 shadow">
+          <div class="card-body">
+            <i class="fas fa-motorcycle fa-3x mb-3 text-primary"></i>
+            <h5 class="card-title">Reparación de Motos</h5>
+            <p class="card-text">Aprende a diagnosticar y reparar motocicletas con prácticas reales y herramientas especializadas.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Curso 2 -->
+      <div class="col-md-4 mb-4">
+        <div class="card tarjeta-curso h-100 shadow">
+          <div class="card-body">
+            <i class="fas fa-bolt fa-3x mb-3 text-warning"></i>
+            <h5 class="card-title">Electricidad Automotriz</h5>
+            <p class="card-text">Domina el sistema eléctrico de vehículos, desde lo básico hasta diagnósticos con multímetro.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Curso 3 -->
+      <div class="col-md-4 mb-4">
+        <div class="card tarjeta-curso h-100 shadow">
+          <div class="card-body">
+            <i class="fas fa-tools fa-3x mb-3 text-success"></i>
+            <h5 class="card-title">Mecánica General</h5>
+            <p class="card-text">Formación integral para trabajar en talleres, flotas o tu propio negocio de mantenimiento.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Sección principal de cursos -->
+<section class="container my-5">
+  <div class="row align-items-center">
+    
+    <!-- Columna 1: Texto informativo -->
+    <div class="col-md-4 mb-4">
+      <h3 class="text-primary">Curso de Reparación de Motocicletas</h3>
+      <p class="text-justify">
+        Conviértete en técnico especialista en reparación de motocicletas. Nuestro curso está diseñado para enseñarte desde lo más básico hasta el mantenimiento y diagnóstico profesional. Aprenderás a identificar fallas, cambiar piezas, ajustar sistemas mecánicos y eléctricos, y mucho más, utilizando herramientas reales en un ambiente práctico.
+      </p>
+      <p class="text-justify">
+        Ideal para jóvenes emprendedores, mecánicos en formación o apasionados del motociclismo que desean generar ingresos ofreciendo un servicio técnico de calidad.
+      </p>
+    </div>
+
+    <!-- Columna 2: Imagen del curso con líneas laterales -->
+    <div class="col-md-4 mb-4 text-center columna-imagen-borde">
+      <img src="Images/taller-motos02.jpg" 
+           alt="Curso de reparación de motos" 
+           class="img-fluid rounded shadow">
+    </div>
+
+    <!-- Columna 3: Detalles adicionales -->
+    <div class="col-md-4 mb-4">
+      <h5 class="text-success">El curso incluye:</h5>
+      <ul>
+        <li>Manual técnico completo</li>
+        <li>Prácticas con motores reales</li>
+        <li>Certificado con validez laboral</li>
+        <li>Horarios flexibles (mañana/tarde)</li>
+      </ul>
+      <a href="#contacto" class="btn btn-primary mt-3 btn-animado">
+        📩 Solicita más información
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<!-- Información del curso de motocicletas -->
+<section id="info-moto" class="py-5 bg-white">
+  <div class="container">
+    <div class="row text-center mb-4">
+      <div class="col">
+        <h2 class="fw-bold text-primary animate__animated animate__fadeInDown" id="titulo-cascada">
+          Información del Curso de Motocicletas
+        </h2>
+      </div>
+    </div>
+
+    <div class="row text-center">
+      <!-- Beneficios -->
+      <div class="col-md-4 mb-4">
+        <div class="p-3 shadow rounded border border-primary h-100">
+          <i class="fas fa-star text-primary fs-2 mb-3 icono-beneficio"></i>
+          <h5 class="fw-bold">Beneficios del Curso</h5>
+          <p class="text-justify">Aprende reparación de motocicletas de forma práctica y técnica. Recibirás capacitación en herramientas modernas y diagnóstico de fallas reales, incrementando tus oportunidades laborales.</p>
+        </div>
+      </div>
+
+      <!-- Perfil del Egresado -->
+      <div class="col-md-4 mb-4">
+        <div class="p-3 shadow rounded border border-success h-100">
+          <i class="fas fa-user-cog text-success fs-2 mb-3 icono-beneficio"></i>
+          <h5 class="fw-bold">Perfil del Egresado</h5>
+          <p class="text-justify">Serás capaz de realizar mantenimiento preventivo y correctivo en motocicletas de distintas marcas, manejarás catálogos de partes, herramientas especializadas y atención al cliente profesional.</p>
+        </div>
+      </div>
+
+      <!-- Oportunidades Laborales -->
+      <div class="col-md-4 mb-4">
+        <div class="p-3 shadow rounded border border-warning h-100">
+          <i class="fas fa-briefcase text-warning fs-2 mb-3 icono-beneficio"></i>
+          <h5 class="fw-bold">Oportunidades Laborales</h5>
+          <p class="text-justify">Podrás trabajar en talleres especializados, agencias de motos, crear tu propio negocio o brindar servicio técnico a domicilio. Este curso abre puertas a un oficio rentable y demandado.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="container my-5">
+  <h2 class="text-center mb-4 text-primary fw-bold">Planes de Estudio</h2>
+  <div class="row g-4">
+
+    <!-- Plan Básico -->
+    <div class="col-md-4">
+      <div class="p-4 bg-primary text-white plan-card text-center h-100">
+        <i class="fas fa-wrench fa-3x mb-3 shake-icon"></i>
+        <h4 class="fw-bold">Plan Básico</h4>
+        <p>Ideal para iniciar desde cero. Aprende mantenimiento general y diagnóstico rápido de motos.</p>
+        <h5 class="fw-bold">$1,200 MXN</h5>
+        <a href="#contacto" class="btn btn-light mt-3 btn-plan">Solicitar</a>
+      </div>
+    </div>
+
+    <!-- Plan Intermedio -->
+    <div class="col-md-4">
+      <div class="p-4 bg-success text-white plan-card text-center h-100">
+        <i class="fas fa-motorcycle fa-3x mb-3 shake-icon"></i>
+        <h4 class="fw-bold">Plan Intermedio</h4>
+        <p>Incluye prácticas con motores, ajustes de carburador y pruebas de ruta.</p>
+        <h5 class="fw-bold">$1,800 MXN</h5>
+        <a href="#contacto" class="btn btn-light mt-3 btn-plan">Solicitar</a>
+      </div>
+    </div>
+
+    <!-- Plan Avanzado -->
+    <div class="col-md-4">
+      <div class="p-4 bg-warning text-dark plan-card text-center h-100">
+        <i class="fas fa-tools fa-3x mb-3 shake-icon"></i>
+        <h4 class="fw-bold">Plan Avanzado</h4>
+        <p>Formación completa en diagnóstico eléctrico, reconstrucción de motores y atención al cliente.</p>
+        <h5 class="fw-bold">$2,500 MXN</h5>
+        <a href="#contacto" class="btn btn-dark mt-3 btn-plan">Solicitar</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Sección de Ubicación -->
+<section id="ubicacion" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center fw-bold mb-4 text-primary">
+      <i class="fas fa-map-marker-alt text-danger me-2"></i> Nuestra Ubicación
+    </h2>
+    <div class="row justify-content-center">
+      <div class="col-md-10">
+        <!-- Google Maps Embed -->
+        <div class="ratio ratio-16x9 shadow rounded">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3733.045199786025!2d-100.98850208507352!3d22.15197818538286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842aa210b2137b01%3A0xa2d4d2e2299ddc4c!2sAv.%20Universidad%2C%20Centro%20Hist%C3%B3rico%2C%2078000%20San%20Luis%20Potos%C3%AD%2C%20S.L.P.!5e0!3m2!1ses-419!2smx!4v1620000000000!5m2!1ses-419!2smx" 
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Contacto -->
+  <section id="contacto" class="py-5 text-white" style="background-color: #343a40;">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-4">Contáctanos</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <form>
+            <div class="mb-3">
+              <label><i class="fa-solid fa-user me-2"></i>Nombre completo</label>
+              <input type="text" class="form-control">
+            </div>
+            <div class="mb-3">
+              <label><i class="fa-solid fa-phone me-2"></i>Teléfono</label>
+              <input type="tel" class="form-control">
+            </div>
+            <div class="mb-3">
+              <label><i class="fa-solid fa-envelope me-2"></i>Correo</label>
+              <input type="email" class="form-control">
+            </div>
+            <div class="mb-3">
+              <label><i class="fa-solid fa-message me-2"></i>Mensaje</label>
+              <textarea class="form-control" rows="4"></textarea>
+            </div>
+            <div class="d-grid">
+              <button class="btn btn-warning fw-bold text-dark">Enviar mensaje</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center">
+    <div class="mb-3">
+      <a href="https://facebook.com" target="_blank" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://twitter.com" target="_blank" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+      <a href="https://instagram.com" target="_blank" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+      <a href="https://x.com" target="_blank" class="text-white me-3"><i class="fab fa-x-twitter"></i></a>
+      <a href="https://tiktok.com" target="_blank" class="text-white"><i class="fab fa-tiktok"></i></a>
+    </div>
+    <p>&copy; 2025 Pedro Luis García Martínez | Todos los derechos reservados</p>
+  </footer>
+
+  <!-- WhatsApp flotante -->
+  <a href="https://wa.me/5215512345678" class="whatsapp-float" target="_blank" title="Enviar mensaje por WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- Botón regresar arriba -->
+  <div class="scroll-top" onclick="window.scrollTo({ top: 0, behavior: 'smooth' })" title="Volver arriba">
+    <i class="fa-solid fa-arrow-up"></i>
+  </div>
+
+  
+<!-- Loader estilo motocicleta caminando -->
+<div id="loader" class="loader-overlay">
+  <div class="loader-content">
+    <i class="fas fa-motorcycle icono-moto-caminando text-warning"></i>
+    <span class="ms-3 fs-5 fw-bold text-dark">Cargando...</span>
+  </div>
+</div>
+
+
+<!-- Enlace a JS -->
+<script src="js/script.js"></script>
+<!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

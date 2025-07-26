@@ -1,0 +1,73 @@
+/* Estilo base: se aplica a todos los tamaños */
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Extra pequeños dispositivos (teléfonos en vertical) - hasta 575px */
+@media (max-width: 575.98px) {
+  body {
+    font-size: 14px;
+  }
+
+  .columna-ajustada {
+    text-align: center;
+  }
+}
+
+/* Pequeños dispositivos (teléfonos grandes) - de 576px a 767px */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  body {
+    font-size: 15px;
+  }
+
+  .btn-animado {
+    padding: 10px 18px;
+    font-size: 14px;
+  }
+}
+
+/* Medianos dispositivos (tablets) - de 768px a 991px */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  body {
+    font-size: 16px;
+  }
+
+  .img-fluid {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Dispositivos grandes (laptops) - de 992px a 1199px */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  body {
+    font-size: 17px;
+  }
+
+  .titulo {
+    font-size: 2rem;
+  }
+}
+
+/* Extra grandes (escritorios grandes, pantallas anchas) - de 1200px a 1399px */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  body {
+    font-size: 18px;
+  }
+
+  .seccion-principal {
+    padding: 4rem;
+  }
+}
+
+/* Super grandes (4K o pantallas muy anchas) - 1400px en adelante */
+@media (min-width: 1400px) {
+  body {
+    font-size: 19px;
+  }
+
+  .contenedor-grande {
+    max-width: 1440px;
+    margin: auto;
+  }
+}
